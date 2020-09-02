@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "ApiRest.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ApiRest.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiRest.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ApiRest.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ApiRest.Domain/ApiRest.Domain.csproj",
+      "msbuildProject": "../ApiRest.Domain/ApiRest.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "ApiRest.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Luiz Carlos Moitinho\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\ApiRest.Domain\\ApiRest.Domain.csproj": {
+              "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\ApiRest.Domain\\ApiRest.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
