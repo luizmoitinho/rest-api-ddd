@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\RestAPI.Domain.Core\\RestAPI.Domain.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Core\\RestAPI.Domain.Core.csproj",
       "projectName": "RestAPI.Domain.Core",
-      "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\RestAPI.Domain.Core\\RestAPI.Domain.Core.csproj",
+      "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Core\\RestAPI.Domain.Core.csproj",
       "packagesPath": "C:\\Users\\Luiz Carlos Moitinho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\RestAPI.Domain.Core\\obj\\",
+      "outputPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luiz Carlos Moitinho\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\ApiRest.Domain\\ApiRest.Domain.csproj": {}
+    "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\ApiRest.Domain\\ApiRest.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\ApiRest.Domain\\ApiRest.Domain.csproj": {
+    "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\ApiRest.Domain\\ApiRest.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\ApiRest.Domain\\ApiRest.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\ApiRest.Domain\\ApiRest.Domain.csproj",
         "projectName": "ApiRest.Domain",
-        "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\ApiRest.Domain\\ApiRest.Domain.csproj",
+        "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\ApiRest.Domain\\ApiRest.Domain.csproj",
         "packagesPath": "C:\\Users\\Luiz Carlos Moitinho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luiz Carlos Moitinho\\source\\repos\\RestAPI\\ApiRest.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\ApiRest.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luiz Carlos Moitinho\\AppData\\Roaming\\NuGet\\NuGet.Config",
