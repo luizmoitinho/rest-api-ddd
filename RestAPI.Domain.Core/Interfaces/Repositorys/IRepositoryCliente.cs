@@ -2,7 +2,7 @@
 
 namespace RestAPI.Domain.Core.Interfaces.Repositorys
 {
-    public interface IRepositoryCliente : IRepositoryaBase<Cliente>
+    public interface IRepositoryCliente : IRepositoryBase<Cliente>
     {
 
 
