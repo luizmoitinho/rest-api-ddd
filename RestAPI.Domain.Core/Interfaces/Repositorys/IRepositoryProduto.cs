@@ -2,7 +2,10 @@
 
 namespace RestAPI.Domain.Core.Interfaces.Repositorys
 {
-    interface IRepositoryProduto : IRepositoryaBase<Produto>
+    public interface IRepositoryProduto : IRepositoryaBase<Produto>
     {
+
     }
 }
+
+
