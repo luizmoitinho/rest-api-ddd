@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace RestAPI.Domain.Core.Interfaces.Services
 {
@@ -10,7 +8,7 @@ namespace RestAPI.Domain.Core.Interfaces.Services
         void Update(TEntity obj);
         void remove(TEntity obj);
         IEnumerable<TEntity> GetAll();
-        TEntity GeById(int id);
+        TEntity GetById(int id);
 
     }
 }

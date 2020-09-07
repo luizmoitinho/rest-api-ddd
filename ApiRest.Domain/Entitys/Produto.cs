@@ -3,8 +3,8 @@
     public class Produto : Base
     {
 
-        public string nome { get; set; }
-        public decimal valor { get; set; }
+        public string Nome { get; set; }
+        public decimal Valor { get; set; }
         public bool isAtivo { get; set; }
 
     }

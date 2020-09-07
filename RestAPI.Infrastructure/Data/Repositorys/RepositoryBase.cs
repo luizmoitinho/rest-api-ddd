@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RestAPI.Domain.Core.Interfaces.Repositorys;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,9 +1,6 @@
 ﻿using RestAPI.Domain.Core.Interfaces.Repositorys;
 using RestAPI.Domain.Core.Interfaces.Services;
-using RestAPI.Infrastructure.Data.Repositorys;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace RestAPI.Domain.Services
 {
