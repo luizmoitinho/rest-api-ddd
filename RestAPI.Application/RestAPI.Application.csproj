@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\ApiRest.Domain\ApiRest.Domain.csproj" />
+    <ProjectReference Include="..\RestAPI.Domain.Core\RestAPI.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>

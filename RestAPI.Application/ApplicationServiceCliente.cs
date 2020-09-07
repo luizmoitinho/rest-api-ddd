@@ -2,7 +2,6 @@
 using RestAPI.Application.Interfaces;
 using RestAPI.Application.Interfaces.Mappers;
 using RestAPI.Domain.Core.Interfaces.Services;
-using System;
 using System.Collections.Generic;
 
 namespace RestAPI.Application

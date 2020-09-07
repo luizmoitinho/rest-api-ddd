@@ -1,11 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using RestAPI.Domain.Core.Interfaces.Repositorys;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 
 namespace RestAPI.Infrastructure.Data.Repositorys
 {
-    public class RepositoryBase<TEntity> : IRepositoryaBase<TEntity> where TEntity : class
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
         private readonly SqlContext sqlContext;
 
@@ -14,7 +16,7 @@ namespace RestAPI.Infrastructure.Data.Repositorys
             this.sqlContext = sqlContext;
         }
 
-        void IRepositoryaBase<TEntity>.Add(TEntity obj)
+        public void Add(TEntity obj)
         {
             try
             {
@@ -28,7 +30,7 @@ namespace RestAPI.Infrastructure.Data.Repositorys
             }
         }
 
-        void IRepositoryaBase<TEntity>.Delete(TEntity obj)
+        public void Remove(TEntity obj)
         {
             try
             {
@@ -41,22 +43,22 @@ namespace RestAPI.Infrastructure.Data.Repositorys
             }
         }
 
-        IEnumerable<TEntity> IRepositoryaBase<TEntity>.GetAll()
+        public IEnumerable<TEntity> GetAll()
         {
             return sqlContext.Set<TEntity>().ToList();
 
         }
 
-        TEntity IRepositoryaBase<TEntity>.GetById(int id)
+        public TEntity GetById(int id)
         {
             return sqlContext.Set<TEntity>().Find(id);
         }
 
-        void IRepositoryaBase<TEntity>.Update(TEntity obj)
+        public void Update(TEntity obj)
         {
             try
             {
-                sqlContext.Entry(obj).State = EntityState.Modified;
+                sqlContext.Entry(obj).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 sqlContext.SaveChanges();
             }
             catch (Exception e)

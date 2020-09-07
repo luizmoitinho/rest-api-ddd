@@ -1,4 +1,5 @@
-﻿using ApiRest.Domain.Entitys;
+﻿
+using ApiRest.Domain.Entitys;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
@@ -16,9 +17,9 @@ namespace RestAPI.Infrastructure.Data
 
         }
 
-        public DbSet<Cliente> Clientes { get; set; }
+        public System.Data.Entity.DbSet<Cliente> Clientes { get; set; }
 
-        public DbSet<Produto> Produtos { get; set; }
+        public System.Data.Entity.DbSet<Produto> Produtos { get; set; }
 
         public override int SaveChanges()
         {

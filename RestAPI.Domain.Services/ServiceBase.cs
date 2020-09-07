@@ -27,6 +27,11 @@ namespace RestAPI.Domain.Services
             return repository.GetAll();
         }
 
+        public TEntity GetById(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void remove(TEntity obj)
         {
             repository.Remove(obj);

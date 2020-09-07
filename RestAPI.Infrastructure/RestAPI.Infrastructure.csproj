@@ -5,13 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="4.1 - Data\" />
-    <Folder Include="4.2 - CrossCutting\" />
+    <Compile Remove="4.1 - Data\**" />
+    <EmbeddedResource Remove="4.1 - Data\**" />
+    <None Remove="4.1 - Data\**" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ApiRest.Domain\ApiRest.Domain.csproj" />
+    <ProjectReference Include="..\RestAPI.Application\RestAPI.Application.csproj" />
     <ProjectReference Include="..\RestAPI.Domain.Core\RestAPI.Domain.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CrossCutting\IOC\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
   </ItemGroup>
 
 </Project>

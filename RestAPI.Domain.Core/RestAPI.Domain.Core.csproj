@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\Repositorys\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ApiRest.Domain\ApiRest.Domain.csproj" />
   </ItemGroup>
 

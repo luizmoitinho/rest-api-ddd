@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiRest.Domain\ApiRest.Domain.csproj" />
+    <ProjectReference Include="..\RestAPI.Domain.Core\RestAPI.Domain.Core.csproj" />
+    <ProjectReference Include="..\RestAPI.Infrastructure\RestAPI.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
