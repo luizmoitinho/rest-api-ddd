@@ -15,7 +15,6 @@ namespace RestAPI.Infrastructure.CrossCutting.IOC
             #region IOC
             builder.RegisterType<ApplicationServiceCliente>().As<IApplicationServiceCliente>();
             builder.RegisterType<ApplicationServiceProduto>().As<IApplicationServiceProduto>();
-            builder.RegisterType<ServiceBase>().As<IServiceCliente>();
             builder.RegisterType<ServiceProduto>().As<IServiceProduto>();
             builder.RegisterType<ServiceCliente>().As<IServiceProduto>();
             builder.RegisterType<RepositoryCliente>().As<IRepositoryCliente>();

@@ -14,6 +14,7 @@
     <ProjectReference Include="..\ApiRest.Domain\ApiRest.Domain.csproj" />
     <ProjectReference Include="..\RestAPI.Application\RestAPI.Application.csproj" />
     <ProjectReference Include="..\RestAPI.Domain.Core\RestAPI.Domain.Core.csproj" />
+    <ProjectReference Include="..\RestAPI.Domain.Services\RestAPI.Domain.Services.csproj" />
     <ProjectReference Include="..\RestAPI.Domain.Servics\RestAPI.Domain.Services.csproj" />
   </ItemGroup>
 
