@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Autofac/5.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        }
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "dependencies": {
@@ -521,10 +530,44 @@
         "runtime": {
           "bin/placeholder/RestAPI.Domain.Core.dll": {}
         }
+      },
+      "RestAPI.Domain.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "RestAPI.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RestAPI.Domain.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestAPI.Domain.Services.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Autofac/5.2.0": {
+      "sha512": "V8dBH0dsv75uDzl7Sw+HkhKDPUw2eXnlMjcSVMH+tLo2s67MpTKGyDj1pDcpR+IF2u4YRs0s3/x7R88YJzIWvg==",
+      "type": "package",
+      "path": "autofac/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.5.2.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net461/Autofac.dll",
+        "lib/net461/Autofac.pdb",
+        "lib/net461/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.pdb",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.pdb",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
     "EntityFramework/6.4.4": {
       "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
       "type": "package",
@@ -1596,15 +1639,22 @@
       "type": "project",
       "path": "../RestAPI.Domain.Core/RestAPI.Domain.Core.csproj",
       "msbuildProject": "../RestAPI.Domain.Core/RestAPI.Domain.Core.csproj"
+    },
+    "RestAPI.Domain.Services/1.0.0": {
+      "type": "project",
+      "path": "../RestAPI.Domain.Services/RestAPI.Domain.Services.csproj",
+      "msbuildProject": "../RestAPI.Domain.Services/RestAPI.Domain.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "ApiRest.Domain >= 1.0.0",
+      "Autofac >= 5.2.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 3.1.7",
       "RestAPI.Application >= 1.0.0",
-      "RestAPI.Domain.Core >= 1.0.0"
+      "RestAPI.Domain.Core >= 1.0.0",
+      "RestAPI.Domain.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1641,6 +1691,12 @@
             },
             "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Core\\RestAPI.Domain.Core.csproj": {
               "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Core\\RestAPI.Domain.Core.csproj"
+            },
+            "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Services\\RestAPI.Domain.Services.csproj": {
+              "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Services\\RestAPI.Domain.Services.csproj"
+            },
+            "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Servics\\RestAPI.Domain.Services.csproj": {
+              "projectPath": "C:\\Users\\Luiz Carlos Moitinho\\Documents\\rest-api-ddd\\RestAPI.Domain.Servics\\RestAPI.Domain.Services.csproj"
             }
           }
         }
@@ -1654,6 +1710,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[5.2.0, )"
+          },
           "EntityFramework": {
             "target": "Package",
             "version": "[6.4.4, )"

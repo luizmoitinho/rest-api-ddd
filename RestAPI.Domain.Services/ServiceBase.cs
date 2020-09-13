@@ -1,6 +1,8 @@
 ﻿using RestAPI.Domain.Core.Interfaces.Repositorys;
 using RestAPI.Domain.Core.Interfaces.Services;
+using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace RestAPI.Domain.Services
 {
@@ -12,14 +14,10 @@ namespace RestAPI.Domain.Services
         {
             this.repository = repository;
         }
+
         public void Add(TEntity obj)
         {
             repository.Add(obj);
-        }
-
-        public TEntity GeById(int id)
-        {
-            return repository.GetById(id);
         }
 
         public IEnumerable<TEntity> GetAll()
@@ -29,7 +27,7 @@ namespace RestAPI.Domain.Services
 
         public TEntity GetById(int id)
         {
-            throw new System.NotImplementedException();
+            return repository.GetById(id);
         }
 
         public void remove(TEntity obj)
