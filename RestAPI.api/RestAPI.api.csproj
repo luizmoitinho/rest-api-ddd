@@ -4,5 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RestAPI.Domain.Services\RestAPI.Domain.Services.csproj" />
+    <ProjectReference Include="..\RestAPI.Infrastructure\RestAPI.Infrastructure.csproj" />
+  </ItemGroup>
+
 
 </Project>

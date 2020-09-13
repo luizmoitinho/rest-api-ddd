@@ -1,7 +1,4 @@
 ﻿using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RestAPI.Infrastructure.CrossCutting.IOC
 {
@@ -11,6 +8,5 @@ namespace RestAPI.Infrastructure.CrossCutting.IOC
         {
             ConfigurationIOC.Load(builder);
         }
-
     }
 }

@@ -15,13 +15,11 @@
     <ProjectReference Include="..\RestAPI.Application\RestAPI.Application.csproj" />
     <ProjectReference Include="..\RestAPI.Domain.Core\RestAPI.Domain.Core.csproj" />
     <ProjectReference Include="..\RestAPI.Domain.Services\RestAPI.Domain.Services.csproj" />
-    <ProjectReference Include="..\RestAPI.Domain.Servics\RestAPI.Domain.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
   </ItemGroup>
 
 </Project>
