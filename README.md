@@ -22,5 +22,5 @@ Entity Framework Core, IoC com AutoFac.**
 
 **Caso queira pegar um dado elemento pelo seu id basta fazer**
 
-3. /Recurso/{id}
+3. /Recurso/id
 
