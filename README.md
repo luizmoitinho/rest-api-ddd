@@ -19,6 +19,8 @@ Entity Framework Core, IoC com AutoFac.**
 ### Rotas  
 1. /Clientes {Get, Post, Delete, Put}
 2. /Produtos 1. /Clientes {Get, Post, Delete, Put}
+
 **Caso queira pegar um dado elemento pelo seu id basta fazer**
+
 3. /Recurso/{id}
 
